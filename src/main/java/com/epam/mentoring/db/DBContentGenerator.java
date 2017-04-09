@@ -93,6 +93,7 @@ public class DBContentGenerator implements InitializingBean {
 		createFlights();
 		createTickets();
 		createReviews();
+
 	}
 
 	private void createReviews() {
