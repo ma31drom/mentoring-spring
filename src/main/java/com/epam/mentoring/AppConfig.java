@@ -25,6 +25,7 @@ public class AppConfig {
 	@Bean
 	@Autowired
 	public DataSourceInitializer dataSourceIniter(final DataSource ds) {
+
 		final DataSourceInitializer dataSourceInitializer = new DataSourceInitializer();
 		dataSourceInitializer.setDatabasePopulator(dbInit());
 		dataSourceInitializer.setDataSource(ds);
