@@ -10,7 +10,9 @@ public class App {
 	}
 
 	public static void main(final String[] args) {
+
 		System.setProperty("spring.profiles.active", "DEV");
+
 		SpringApplication.run(App.class, args);
 	}
 
