@@ -27,11 +27,7 @@ targetCompatibility = 1.8
 
 dependencies {
     
-    compile("org.springframework.boot:spring-boot-starter-web") {
-        exclude module: "spring-boot-starter-tomcat"
-    }
-    compile("org.springframework.boot:spring-boot-starter-jetty")
-    
+    compile("org.springframework.boot:spring-boot-starter-web") 
     compile 'org.springframework:spring-jdbc:4.3.7.RELEASE'  
     compile 'com.h2database:h2:1.4.194'  
     compile 'com.google.guava:guava:20.0'
