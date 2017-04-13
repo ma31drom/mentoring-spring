@@ -34,10 +34,7 @@ public class AppConfig {
 
 	@Bean
 	public DatabasePopulator dbInit() {
-		final ResourceDatabasePopulator resourceDatabasePopulator = new ResourceDatabasePopulator(
-				new ClassPathResource("sql/schema.sql"));
-
-		return resourceDatabasePopulator;
+		return new ResourceDatabasePopulator(new ClassPathResource("sql/schema.sql"));
 	}
 
 	@Bean

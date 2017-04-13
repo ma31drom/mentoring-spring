@@ -6,11 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class App {
 
-	{
-		System.setProperty("spring.profiles.active", "DEV");
-	}
-
 	public static void main(final String[] args) {
+		System.setProperty("spring.profiles.active", "DEV");
 		SpringApplication.run(App.class, args);
 	}
 

@@ -17,16 +17,17 @@ import com.epam.mentoring.dao.model.User;
 
 @Repository
 public class JdbcUserDao implements UserDao {
+
 	@Autowired
 	private JdbcTemplate template;
 
-	private final static String SELECT_NO_CONDITION = "SELECT * FROM \"USER\"";
-	private final static String LOGIN_PASS_CONDITION = " WHERE (\"LOGIN\"=?) AND  (\"PASSWORD\"=?)";
-	private final static String ID_CONDITION = " WHERE (\"ID\"=?)";
-	private final static String COMPLEX_SELECT = "SELECT * FROM \"USER\" AS u WHERE (?<(SELECT COUNT(*) FROM \"TICKET\" AS t WHERE t.USER_ID=u.ID)) AND (?<(SELECT COUNT(*) FROM \"REVIEW\" AS r WHERE (r.USER_ID=u.ID) AND (r.POST_DATE BETWEEN ? AND ?)))";
-	private final static String INSERT = "INSERT INTO \"USER\" (\"FIRST_NAME\", \"LAST_NAME\", \"LOGIN\", \"PASSWORD\") VALUES (?,?,?,?)";
-	private final static String UPDATE = "UPDATE \"USER\" SET \"FIRST_NAME\"=?, \"LAST_NAME\"=?, \"PASSWORD\"=? WHERE \"ID\"=?";
-	private final static String DELETE = "DELETE FROM \"USER\" WHERE ID = ?";
+	private static final String SELECT_NO_CONDITION = "SELECT * FROM \"USER\"";
+	private static final String LOGIN_PASS_CONDITION = " WHERE (\"LOGIN\"=?) AND  (\"PASSWORD\"=?)";
+	private static final String ID_CONDITION = " WHERE (\"ID\"=?)";
+	private static final String COMPLEX_SELECT = "SELECT * FROM \"USER\" AS u WHERE (?<(SELECT COUNT(*) FROM \"TICKET\" AS t WHERE t.USER_ID=u.ID)) AND (?<(SELECT COUNT(*) FROM \"REVIEW\" AS r WHERE (r.USER_ID=u.ID) AND (r.POST_DATE BETWEEN ? AND ?)))";
+	private static final String INSERT = "INSERT INTO \"USER\" (\"FIRST_NAME\", \"LAST_NAME\", \"LOGIN\", \"PASSWORD\") VALUES (?,?,?,?)";
+	private static final String UPDATE = "UPDATE \"USER\" SET \"FIRST_NAME\"=?, \"LAST_NAME\"=?, \"PASSWORD\"=? WHERE \"ID\"=?";
+	private static final String DELETE = "DELETE FROM \"USER\" WHERE ID = ?";
 
 	@Override
 	public User getUser(final String login, final String password) {
@@ -70,9 +71,9 @@ public class JdbcUserDao implements UserDao {
 	@Override
 	public Integer createUsers(final List<User> users) {
 		Integer result = 0;
-		for (final int[] i : Arrays.asList(template.batchUpdate(INSERT, users.stream().map(user -> {
-			return new Object[] { user.getFirstName(), user.getLastName(), user.getLogin(), user.getPassword() };
-		}).collect(Collectors.toList())))) {
+		for (final int[] i : Arrays.asList(template.batchUpdate(INSERT, users.stream().map(
+				user -> new Object[] { user.getFirstName(), user.getLastName(), user.getLogin(), user.getPassword() })
+				.collect(Collectors.toList())))) {
 			result += IntStream.of(i).sum();
 		}
 		return result;

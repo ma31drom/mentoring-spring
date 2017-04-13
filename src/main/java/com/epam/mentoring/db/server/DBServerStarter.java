@@ -7,13 +7,13 @@ public class DBServerStarter implements InitializingBean {
 
 	@Override
 	public void afterPropertiesSet() throws Exception {
-		final Server WebServer = Server.createWebServer();
-		final Server TCPServer = Server.createTcpServer();
-		WebServer.start();
-		TCPServer.start();
+		final Server webServer = Server.createWebServer();
+		final Server tcpServer = Server.createTcpServer();
+		webServer.start();
+		tcpServer.start();
 		Runtime.getRuntime().addShutdownHook(new Thread(() -> {
-			WebServer.stop();
-			TCPServer.stop();
+			webServer.stop();
+			tcpServer.stop();
 		}));
 	}
 

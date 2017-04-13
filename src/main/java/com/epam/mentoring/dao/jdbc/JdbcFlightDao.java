@@ -19,16 +19,16 @@ public class JdbcFlightDao implements FlightDao {
 	@Autowired
 	private JdbcTemplate template;
 
-	private final static Integer PAGE_SIZE = 20;
+	private static final Integer PAGE_SIZE = 20;
 
-	private final static String SELECT_NO_CONDITION = "SELECT * FROM \"FLIGHT\"";
-	private final static String ID_CONDITION = " WHERE \"ID\"=?";
-	private final static String PAGINATION = " LIMIT ? OFFSET ? ORDER BY \"START_DATE\"";
-	private final static String ENDPOINT_CONDITION = " WHERE (\"STARTING_ENDPOINT_NAME\"=?) OR (\"ENDING_ENDPOINT_NAME\"=?)";
-	private final static String DATE_RANGE_CONDITION = " WHERE (\"START_DATE\">?) AND (\"START_DATE\"<?)";
-	private final static String INSERT = "INSERT INTO \"FLIGHT\" (\"STARTING_ENDPOINT_NAME\", \"ENDING_ENDPOINT_NAME\", \"DISTANCE\", \"COST\", \"START_DATE\", \"FULL_TICKET_COUNT\") VALUES (?,?,?,?,?,?)";
-	private final static String UPDATE = "UPDATE \"FLIGHT\" SET \"STARTING_ENDPOINT_NAME\"=?, \"ENDING_ENDPOINT_NAME\"=?, \"DISTANCE\"=?, \"COST\"=?, \"START_DATE\"=?, \"FULL_TICKET_COUNT\"=? WHERE \"ID\"=?";
-	private final static String DELETE = "DELETE FROM \"FLIGHT\" WHERE ID = ?";
+	private static final String SELECT_NO_CONDITION = "SELECT * FROM \"FLIGHT\"";
+	private static final String ID_CONDITION = " WHERE \"ID\"=?";
+	private static final String PAGINATION = " LIMIT ? OFFSET ? ORDER BY \"START_DATE\"";
+	private static final String ENDPOINT_CONDITION = " WHERE (\"STARTING_ENDPOINT_NAME\"=?) OR (\"ENDING_ENDPOINT_NAME\"=?)";
+	private static final String DATE_RANGE_CONDITION = " WHERE (\"START_DATE\">?) AND (\"START_DATE\"<?)";
+	private static final String INSERT = "INSERT INTO \"FLIGHT\" (\"STARTING_ENDPOINT_NAME\", \"ENDING_ENDPOINT_NAME\", \"DISTANCE\", \"COST\", \"START_DATE\", \"FULL_TICKET_COUNT\") VALUES (?,?,?,?,?,?)";
+	private static final String UPDATE = "UPDATE \"FLIGHT\" SET \"STARTING_ENDPOINT_NAME\"=?, \"ENDING_ENDPOINT_NAME\"=?, \"DISTANCE\"=?, \"COST\"=?, \"START_DATE\"=?, \"FULL_TICKET_COUNT\"=? WHERE \"ID\"=?";
+	private static final String DELETE = "DELETE FROM \"FLIGHT\" WHERE ID = ?";
 
 	@Override
 	public List<Flight> getFlights(final Integer pageNumber) {
@@ -55,11 +55,9 @@ public class JdbcFlightDao implements FlightDao {
 
 	@Override
 	public boolean saveFlight(final Flight flight) {
-		return 1 == template
-				.update(INSERT,
-						new Object[] { flight.getStartingEndpointName(), flight.getEndingEndpointName(),
-								flight.getDistance(), flight.getCost(), flight.getStartDate(),
-								flight.getFullTicketCount() });
+		return 1 == template.update(INSERT,
+				new Object[] { flight.getStartingEndpointName(), flight.getEndingEndpointName(), flight.getDistance(),
+						flight.getCost(), flight.getStartDate(), flight.getFullTicketCount() });
 	}
 
 	@Override
@@ -69,11 +67,9 @@ public class JdbcFlightDao implements FlightDao {
 
 	@Override
 	public boolean updateFlight(final Flight flight) {
-		return 1 == template
-				.update(UPDATE,
-						new Object[] { flight.getStartingEndpointName(), flight.getEndingEndpointName(),
-								flight.getDistance(), flight.getCost(), flight.getStartDate(),
-								flight.getFullTicketCount(), flight.getId() });
+		return 1 == template.update(UPDATE,
+				new Object[] { flight.getStartingEndpointName(), flight.getEndingEndpointName(), flight.getDistance(),
+						flight.getCost(), flight.getStartDate(), flight.getFullTicketCount(), flight.getId() });
 	}
 
 	private int getOffsetMultiplier(final Integer pageNumber) {
@@ -89,10 +85,10 @@ public class JdbcFlightDao implements FlightDao {
 	@Override
 	public Integer saveFlights(final List<Flight> flights) {
 		Integer result = 0;
-		for (final int[] i : Arrays.asList(template.batchUpdate(INSERT, flights.stream().map(flight -> {
-			return new Object[] { flight.getStartingEndpointName(), flight.getEndingEndpointName(),
-					flight.getDistance(), flight.getCost(), flight.getStartDate(), flight.getFullTicketCount() };
-		}).collect(Collectors.toList())))) {
+		for (final int[] i : Arrays.asList(template.batchUpdate(INSERT, flights.stream()
+				.map(flight -> new Object[] { flight.getStartingEndpointName(), flight.getEndingEndpointName(),
+						flight.getDistance(), flight.getCost(), flight.getStartDate(), flight.getFullTicketCount() })
+				.collect(Collectors.toList())))) {
 			result += IntStream.of(i).sum();
 		}
 		return result;

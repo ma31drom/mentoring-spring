@@ -20,12 +20,12 @@ public class JdbcReviewDao implements ReviewDao {
 	@Autowired
 	private JdbcTemplate template;
 
-	private final static String SELECT_NO_CONDITION = "SELECT * FROM \"REVIEW\"";
-	private final static String USER_CONDITION = " WHERE (\"USER_ID\"=?)";
-	private final static String FLIGHT_CONDITION = " WHERE (\"FLIGHT_ID\"=?)";
-	private final static String INSERT = "INSERT INTO \"REVIEW\" (\"FLIGHT_ID\", \"USER_ID\", \"POST_DATE\", \"HEADER\", \"REVIEW\") VALUES (?,?,?,?,?)";
-	private final static String UPDATE = "UPDATE \"REVIEW\" SET \"FLIGHT_ID\"=?, \"USER_ID\"=?, \"POST_DATE\"=?, \"HEADER\"=?, \"REVIEW\"=? WHERE \"ID\"=?";
-	private final static String DELETE = "DELETE FROM \"REVIEW\" WHERE ID = ?";
+	private static final String SELECT_NO_CONDITION = "SELECT * FROM \"REVIEW\"";
+	private static final String USER_CONDITION = " WHERE (\"USER_ID\"=?)";
+	private static final String FLIGHT_CONDITION = " WHERE (\"FLIGHT_ID\"=?)";
+	private static final String INSERT = "INSERT INTO \"REVIEW\" (\"FLIGHT_ID\", \"USER_ID\", \"POST_DATE\", \"HEADER\", \"REVIEW\") VALUES (?,?,?,?,?)";
+	private static final String UPDATE = "UPDATE \"REVIEW\" SET \"FLIGHT_ID\"=?, \"USER_ID\"=?, \"POST_DATE\"=?, \"HEADER\"=?, \"REVIEW\"=? WHERE \"ID\"=?";
+	private static final String DELETE = "DELETE FROM \"REVIEW\" WHERE ID = ?";
 
 	@Override
 	public List<Review> getReviewsByUser(final User user) {
@@ -60,10 +60,10 @@ public class JdbcReviewDao implements ReviewDao {
 	@Override
 	public Integer saveReviews(final List<Review> reviews) {
 		Integer result = 0;
-		for (final int[] i : Arrays.asList(template.batchUpdate(INSERT, reviews.stream().map(review -> {
-			return new Object[] { review.getFlightId(), review.getUserId(), review.getPostDate(), review.getHeader(),
-					review.getReview() };
-		}).collect(Collectors.toList())))) {
+		for (final int[] i : Arrays.asList(template.batchUpdate(INSERT,
+				reviews.stream().map(review -> new Object[] { review.getFlightId(), review.getUserId(),
+						review.getPostDate(), review.getHeader(), review.getReview() })
+						.collect(Collectors.toList())))) {
 			result += IntStream.of(i).sum();
 		}
 		return result;

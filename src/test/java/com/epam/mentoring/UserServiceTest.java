@@ -19,7 +19,7 @@ import static org.testng.Assert.*;
 
 @Profile("test")
 @ContextConfiguration(classes = { AppConfig.class })
-public class UserServiceIntegrationTest extends AbstractTestNGSpringContextTests {
+public class UserServiceTest extends AbstractTestNGSpringContextTests {
 
 	@Autowired
 	private UserService userService;

@@ -20,11 +20,11 @@ public class JdbcTicketDao implements TicketDao {
 	@Autowired
 	private JdbcTemplate template;
 
-	private final static String SELECT_NO_CONDITION = "SELECT * FROM \"TICKET\"";
-	private final static String USER_CONDITION = " WHERE (\"USER_ID\"=?)";
-	private final static String FLIGHT_CONDITION = " WHERE (\"FLIGHT_ID\"=?)";
-	private final static String INSERT = "INSERT INTO \"TICKET\" (\"PLACE_NUMBER\", \"FLIGHT_ID\", \"USER_ID\") VALUES (?,?,?)";
-	private final static String DELETE = "DELETE FROM \"TICKET\" WHERE ID = ?";
+	private static final String SELECT_NO_CONDITION = "SELECT * FROM \"TICKET\"";
+	private static final String USER_CONDITION = " WHERE (\"USER_ID\"=?)";
+	private static final String FLIGHT_CONDITION = " WHERE (\"FLIGHT_ID\"=?)";
+	private static final String INSERT = "INSERT INTO \"TICKET\" (\"PLACE_NUMBER\", \"FLIGHT_ID\", \"USER_ID\") VALUES (?,?,?)";
+	private static final String DELETE = "DELETE FROM \"TICKET\" WHERE ID = ?";
 
 	@Override
 	public List<Ticket> getUserTickets(final User user) {

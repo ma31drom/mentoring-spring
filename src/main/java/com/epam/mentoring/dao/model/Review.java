@@ -9,7 +9,7 @@ public class Review {
 	private Integer userId;
 	private Timestamp postDate;
 	private String header;
-	private String review;
+	private String reviewText;
 
 	public Integer getId() {
 		return id;
@@ -52,11 +52,11 @@ public class Review {
 	}
 
 	public String getReview() {
-		return review;
+		return reviewText;
 	}
 
 	public void setReview(final String review) {
-		this.review = review;
+		this.reviewText = review;
 	}
 
 }
