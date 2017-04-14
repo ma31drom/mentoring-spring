@@ -1,0 +1,11 @@
+commit e42a61c6951a4dba398cdddcc54559479c6dcac5
+tree c7078c23d849d4847ff4e33392c26a41b725721f
+parent eb28a20dac3b01e519969fb68d4798053898a06e
+author Maksim Naumovich <ma31drom@gmail.com> 2017-04-13 09:02:32 +0300
+committer Maksim Naumovich <ma31drom@gmail.com> 2017-04-13 09:02:32 +0300
+
+    test
+
+
+
+:100644 100644 a00bec207001413d678f6fc5811fcb50578a3220 7e0cad7ebc03484acc47869ab69f2e8b131f2cf5 M	build.gradle

@@ -1,0 +1,165 @@
+Запущен изменением в SCM
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\mentoring
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url file:///d:/mentoring-spring/mentoring-spring/ # timeout=10
+Fetching upstream changes from file:///d:/mentoring-spring/mentoring-spring/
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress file:///d:/mentoring-spring/mentoring-spring/ +refs/heads/*:refs/remotes/origin/*
+Seen branch in repository origin/master
+Seen 1 remote branch
+ > git.exe tag -l # timeout=10
+Checking out Revision b60677c5cd14beee1ecd51381ed358dad0be47ee (origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f b60677c5cd14beee1ecd51381ed358dad0be47ee
+ > git.exe rev-list e61e9d2587ca9aa411a939b0beef301eb0961b43 # timeout=10
+No emails were triggered.
+[Gradle] - Launching build.
+[mentoring] $ cmd.exe /C "gradle.bat build && exit %%ERRORLEVEL%%"
+Starting a Gradle Daemon (subsequent builds will be faster)
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:compileJava UP-TO-DATE
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:processResources UP-TO-DATE
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:classes UP-TO-DATE
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:findMainClass
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:war
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:bootRepackage
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:assemble
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:compileTestJava UP-TO-DATE
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:processTestResources NO-SOURCE
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:testClasses UP-TO-DATE
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:test UP-TO-DATE
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:check UP-TO-DATE
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:build
+
+[8mha:////4AsxnVFIPxB+ssQPocVj/UBjIWjLYHXfbdQrPIS/IFg0AAAAYx+LCAAAAAAAAP9b85aBtbiIQT2jNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUz5l5Yk5+em+uWXpBabBRd0uewzZWJgqChikILqSs7PK84HKneG0CCFDBDACFJYAAAMk/XNZQAAAA==[0mBUILD SUCCESSFUL
+
+Total time: 6.883 secs
+Build step 'Invoke Gradle script' changed build result to SUCCESS
+[mentoring] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.sonar.SonarRunnerInstallation\SonarQube_Scanner_2.8\bin\sonar-scanner.bat" scan -e -Dsonar.host.url=http://localhost:9000 "-Dsonar.projectName=Test java project with Sonar" -Dsonar.projectVersion=1.0 -Dsonar.sourceEncoding=UTF-8 -Dsonar.projectKey=mentoring-project -Dsonar.sources=src "-Dsonar.projectBaseDir=C:\Program Files (x86)\Jenkins\workspace\mentoring"
+C:\Program Files (x86)\Jenkins\tools\hudson.plugins.sonar.SonarRunnerInstallation\SonarQube_Scanner_2.8\bin\..
+INFO: Option -e/--errors is no longer supported and will be ignored
+INFO: Scanner configuration file: C:\Program Files (x86)\Jenkins\tools\hudson.plugins.sonar.SonarRunnerInstallation\SonarQube_Scanner_2.8\bin\..\conf\sonar-scanner.properties
+INFO: Project root configuration file: NONE
+INFO: SonarQube Scanner 2.8
+INFO: Java 1.8.0_60 Oracle Corporation (64-bit)
+INFO: Windows 7 6.1 amd64
+INFO: User cache: C:\Windows\system32\config\systemprofile\.sonar\cache
+INFO: Load global settings
+INFO: Load global settings (done) | time=102ms
+INFO: User cache: C:\Windows\system32\config\systemprofile\.sonar\cache
+INFO: Load plugins index
+INFO: Load plugins index (done) | time=23ms
+INFO: SonarQube server 6.3.0
+INFO: Default locale: "ru_RU", source code encoding: "UTF-8"
+INFO: Process project properties
+INFO: Load project repositories
+INFO: Load project repositories (done) | time=90ms
+INFO: Load quality profiles
+INFO: Load quality profiles (done) | time=97ms
+INFO: Load active rules
+INFO: Load active rules (done) | time=545ms
+INFO: Load metrics repository
+INFO: Load metrics repository (done) | time=80ms
+INFO: Publish mode
+INFO: Project key: mentoring-project
+INFO: -------------  Scan Test java project with Sonar
+INFO: Load server rules
+INFO: Load server rules (done) | time=119ms
+INFO: Initializer GenericCoverageSensor
+INFO: Initializer GenericCoverageSensor (done) | time=0ms
+INFO: Base dir: C:\Program Files (x86)\Jenkins\workspace\mentoring
+INFO: Working dir: C:\Program Files (x86)\Jenkins\workspace\mentoring\.sonar
+INFO: Source paths: src
+INFO: Source encoding: UTF-8, default locale: ru_RU
+INFO: Index files
+INFO: 27 files indexed
+INFO: Quality profile for java: Sonar way
+INFO: Sensor JavaSquidSensor [java]
+INFO: Configured Java source version (sonar.java.source): none
+INFO: JavaClasspath initialization
+WARN: Bytecode of dependencies was not provided for analysis of source files, you might end up with less precise results. Bytecode can be provided using sonar.java.libraries property
+INFO: JavaClasspath initialization (done) | time=0ms
+INFO: JavaTestClasspath initialization
+INFO: JavaTestClasspath initialization (done) | time=0ms
+INFO: Java Main Files AST scan
+INFO: 25 source files to be analyzed
+INFO: Java Main Files AST scan (done) | time=1411ms
+INFO: 25/25 source files have been analyzed
+INFO: Java Test Files AST scan
+INFO: 0 source files to be analyzed
+INFO: Java Test Files AST scan (done) | time=0ms
+INFO: Sensor JavaSquidSensor [java] (done) | time=1859ms
+INFO: 0/0 source files have been analyzed
+INFO: Sensor NoSonar Sensor [php]
+INFO: Sensor NoSonar Sensor [php] (done) | time=0ms
+INFO: Sensor Coverage Report Import [csharp]
+INFO: Sensor Coverage Report Import [csharp] (done) | time=0ms
+INFO: Sensor Coverage Report Import [csharp]
+INFO: Sensor Coverage Report Import [csharp] (done) | time=0ms
+INFO: Sensor Unit Test Results Import [csharp]
+INFO: Sensor Unit Test Results Import [csharp] (done) | time=0ms
+INFO: Sensor SurefireSensor [java]
+INFO: parsing C:\Program Files (x86)\Jenkins\workspace\mentoring\target\surefire-reports
+INFO: Sensor SurefireSensor [java] (done) | time=0ms
+INFO: Sensor JaCoCoSensor [java]
+INFO: Sensor JaCoCoSensor [java] (done) | time=0ms
+INFO: Sensor XmlFileSensor [java]
+INFO: Sensor XmlFileSensor [java] (done) | time=10ms
+INFO: Sensor Analyzer for "php.ini" files [php]
+INFO: Sensor Analyzer for "php.ini" files [php] (done) | time=0ms
+INFO: Sensor Zero Coverage Sensor
+INFO: Sensor Zero Coverage Sensor (done) | time=32ms
+INFO: Sensor Code Colorizer Sensor
+INFO: Sensor Code Colorizer Sensor (done) | time=1ms
+INFO: Sensor CPD Block Indexer
+INFO: org.sonar.scanner.cpd.deprecated.JavaCpdBlockIndexer@7fda84cf is used for java
+INFO: Sensor CPD Block Indexer (done) | time=45ms
+INFO: Calculating CPD for 16 files
+INFO: CPD calculation finished
+INFO: Analysis report generated in 104ms, dir size=131 KB
+INFO: Analysis reports compressed in 48ms, zip size=72 KB
+INFO: Analysis report uploaded in 79ms
+INFO: ANALYSIS SUCCESSFUL, you can browse http://localhost:9000/dashboard/index/mentoring-project
+INFO: Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+INFO: More about the report processing at http://localhost:9000/api/ce/task?id=AVtl4GcV5e95cyAXGjQu
+INFO: Task total time: 4.617 s
+INFO: ------------------------------------------------------------------------
+INFO: EXECUTION SUCCESS
+INFO: ------------------------------------------------------------------------
+INFO: Total time: 5.920s
+INFO: Final Memory: 48M/369M
+INFO: ------------------------------------------------------------------------
+Archiving artifacts
+Deploying C:\Program Files (x86)\Jenkins\workspace\mentoring\build\libs\mentoring.war to container Tomcat 7.x Remote
+ERROR: Build step failed with exception
+[8mha:////4Hkp1lniP1dAAEzM5/9U2C7OgV2QtYfQjyG6jmGtvwzsAAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mjava.lang.IllegalArgumentException: protocol = http host = null
+	at sun.net.spi.DefaultProxySelector.select(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.invoke(TomcatManager.java:534)
+	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.list(TomcatManager.java:686)
+	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.getStatus(TomcatManager.java:699)
+	at org.codehaus.cargo.container.tomcat.internal.AbstractTomcatManagerDeployer.redeploy(AbstractTomcatManagerDeployer.java:174)
+	at hudson.plugins.deploy.CargoContainerAdapter.deploy(CargoContainerAdapter.java:73)
+	at hudson.plugins.deploy.CargoContainerAdapter$1.invoke(CargoContainerAdapter.java:116)
+	at hudson.plugins.deploy.CargoContainerAdapter$1.invoke(CargoContainerAdapter.java:103)
+	at hudson.FilePath.act(FilePath.java:997)
+	at hudson.FilePath.act(FilePath.java:975)
+	at hudson.plugins.deploy.CargoContainerAdapter.redeploy(CargoContainerAdapter.java:103)
+	at hudson.plugins.deploy.DeployPublisher.perform(DeployPublisher.java:61)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:779)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:720)
+	at hudson.model.Build$BuildExecution.post2(Build.java:186)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:665)
+	at hudson.model.Run.execute(Run.java:1760)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:405)
+Build step 'Deploy war/ear to a container' marked build as failure
+Email was triggered for: Always
+Sending email for trigger: Always
+Not sending mail to unregistered user ma31drom@gmail.com
+Sending email to: ma31drom@gmail.com
+Finished: FAILURE

@@ -1,0 +1,11 @@
+commit 0146a4e3d20e0d6b925d4832969899fd23ff37b2
+tree 73873a8be217e2d02d61c66bdcf8be9f90f0a767
+parent e42a61c6951a4dba398cdddcc54559479c6dcac5
+author Maksim Naumovich <ma31drom@gmail.com> 2017-04-13 17:16:53 +0300
+committer Maksim Naumovich <ma31drom@gmail.com> 2017-04-13 17:16:53 +0300
+
+    test
+
+
+
+:100644 100644 f4d4e149e4de4145cba784673ca11678a05d262a 55e3f58bd0a26266340cc5c85a96022801cbf522 M	src/main/java/com/epam/mentoring/AppConfig.java

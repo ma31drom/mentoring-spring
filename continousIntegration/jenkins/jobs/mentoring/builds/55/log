@@ -1,0 +1,58 @@
+Запущен изменением в SCM
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\mentoring
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url file:///d:/mentoring-spring/mentoring-spring/ # timeout=10
+Fetching upstream changes from file:///d:/mentoring-spring/mentoring-spring/
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress file:///d:/mentoring-spring/mentoring-spring/ +refs/heads/*:refs/remotes/origin/*
+Seen branch in repository origin/master
+Seen 1 remote branch
+ > git.exe tag -l # timeout=10
+Checking out Revision 13d7c319bccf563ea35548f5ad40772df0bef1f6 (origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 13d7c319bccf563ea35548f5ad40772df0bef1f6
+ > git.exe rev-list 3b8c0f04d720ba37de332a8d2808ab0633dc3290 # timeout=10
+No emails were triggered.
+[Gradle] - Launching build.
+[mentoring] $ cmd.exe /C "gradle.bat build && exit %%ERRORLEVEL%%"
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:compileJava
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:processResources UP-TO-DATE
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:classes
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:findMainClass
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:war
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:bootRepackage
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:assemble
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:compileTestJava UP-TO-DATE
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:processTestResources NO-SOURCE
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:testClasses UP-TO-DATE
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:test
+
+com.epam.mentoring.UserServiceTest.springTestContextPrepareTestInstance FAILED
+    java.lang.IllegalStateException
+        Caused by: java.lang.IllegalStateException
+            Caused by: java.lang.IllegalArgumentException
+
+7 tests completed, 1 failed, 6 skipped
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:test FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///C:/Program%20Files%20(x86)/Jenkins/workspace/mentoring/build/reports/tests/test/index.html
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+[8mha:////4AsxnVFIPxB+ssQPocVj/UBjIWjLYHXfbdQrPIS/IFg0AAAAYx+LCAAAAAAAAP9b85aBtbiIQT2jNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUz5l5Yk5+em+uWXpBabBRd0uewzZWJgqChikILqSs7PK84HKneG0CCFDBDACFJYAAAMk/XNZQAAAA==[0mBUILD FAILED
+
+Total time: 4.01 secs
+Build step 'Invoke Gradle script' changed build result to FAILURE
+Build step 'Invoke Gradle script' marked build as failure
+Skipped archiving because build is not successful
+Email was triggered for: Always
+Sending email for trigger: Always
+Not sending mail to unregistered user ma31drom@gmail.com
+Sending email to: ma31drom@gmail.com
+Finished: FAILURE

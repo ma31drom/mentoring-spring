@@ -1,0 +1,11 @@
+commit 3b8c0f04d720ba37de332a8d2808ab0633dc3290
+tree 0d5746458b5792bb90a64c5fb5de797934bd7255
+parent 63c595787ce315745cc07b784a2f83fb969521b4
+author Maksim Naumovich <ma31drom@gmail.com> 2017-04-13 22:26:36 +0300
+committer Maksim Naumovich <ma31drom@gmail.com> 2017-04-13 22:26:36 +0300
+
+    sonr
+
+
+
+:100644 100644 f1bbe93b1d6a3e7c560cd1f5fef0e1e331ac6160 362384f93446d91f6cefc5d4b011c06d7c6eec6a M	src/main/java/com/epam/mentoring/App.java
