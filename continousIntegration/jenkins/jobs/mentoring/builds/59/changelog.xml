@@ -1,0 +1,11 @@
+commit 1584d07732d576f455afebdcfb7c4a6d579b42b7
+tree ef911e619a346689f77b303e25bb6782271a3122
+parent 148ac9f2969f0c91a597aa2b7f1e74fd89fdbc2e
+author Maksim Naumovich <ma31drom@gmail.com> 2017-04-14 14:28:34 +0300
+committer Maksim Naumovich <ma31drom@gmail.com> 2017-04-14 14:28:34 +0300
+
+    snq
+
+
+
+:100644 000000 e17a50602bbdd9e262333303be6e118a5fbdb326 0000000000000000000000000000000000000000 D	continousIntegration/SonarCubeResults.jpg

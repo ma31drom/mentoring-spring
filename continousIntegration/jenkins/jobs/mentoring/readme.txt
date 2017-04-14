@@ -1,0 +1,1 @@
+sonar code smells - duplicates in sample data to initialy fill tables (in some arrays of strings they are repeated).

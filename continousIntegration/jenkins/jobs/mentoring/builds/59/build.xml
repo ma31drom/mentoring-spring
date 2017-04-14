@@ -4,20 +4,19 @@
     <hudson.model.CauseAction>
       <causeBag class="linked-hash-map">
         <entry>
-          <hudson.model.Cause_-UserIdCause>
-            <userId>admin</userId>
-          </hudson.model.Cause_-UserIdCause>
+          <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
           <int>1</int>
         </entry>
       </causeBag>
     </hudson.model.CauseAction>
+    <hudson.triggers.SCMTrigger_-BuildAction/>
     <hudson.plugins.git.util.BuildData plugin="git@3.2.0">
       <buildsByBranchName>
         <entry>
           <string>origin/master</string>
           <hudson.plugins.git.util.Build>
             <marked plugin="git-client@2.4.1">
-              <sha1>d8a75b8146da259139b36affd85ca2a5bb8751ba</sha1>
+              <sha1>1584d07732d576f455afebdcfb7c4a6d579b42b7</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -26,12 +25,11 @@
               </branches>
             </marked>
             <revision reference="../marked"/>
-            <hudsonBuildNumber>62</hudsonBuildNumber>
+            <hudsonBuildNumber>59</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
       <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
-      <scmName></scmName>
       <remoteUrls>
         <string>file://d:/mentoring-spring/mentoring-spring/</string>
       </remoteUrls>
@@ -48,7 +46,7 @@
     <hudson.scm.SCMRevisionState_-None/>
     <hudson.plugins.sonar.action.SonarAnalysisAction plugin="sonar@2.6.1">
       <installationName>local</installationName>
-      <ceTaskId>AVtsQjNZu7iC9PvPIzSo</ceTaskId>
+      <ceTaskId>AVtsOPak5e95cyAXGjQ3</ceTaskId>
       <url>http://localhost:9000/dashboard/index/mentoring-project</url>
       <isNew>true</isNew>
       <isSkipped>false</isSkipped>
@@ -56,33 +54,33 @@
     <hudson.plugins.sonar.action.SonarCacheAction plugin="sonar@2.6.1">
       <infoByTaskId>
         <entry>
-          <string>AVtsQjNZu7iC9PvPIzSo</string>
+          <string>AVtsOPak5e95cyAXGjQ3</string>
           <hudson.plugins.sonar.client.ProjectInformation>
-            <created>1492169931823</created>
+            <created>1492169326536</created>
             <key>mentoring-project</key>
             <name>Test java project with Sonar</name>
             <url>http://localhost:9000/dashboard/index/mentoring-project</url>
             <status>ERROR</status>
-            <ceStatus>in_progress</ceStatus>
-            <ceUrl>http://localhost:9000/api/ce/task?id=AVtsQjNZu7iC9PvPIzSo</ceUrl>
+            <ceStatus>success</ceStatus>
+            <ceUrl>http://localhost:9000/api/ce/task?id=AVtsOPak5e95cyAXGjQ3</ceUrl>
           </hudson.plugins.sonar.client.ProjectInformation>
         </entry>
       </infoByTaskId>
       <infoByUrl/>
-      <lastRequest>1492169932047</lastRequest>
+      <lastRequest>1492169326549</lastRequest>
       <lastProjInfo>
         <hudson.plugins.sonar.client.ProjectInformation reference="../../infoByTaskId/entry/hudson.plugins.sonar.client.ProjectInformation"/>
       </lastProjInfo>
     </hudson.plugins.sonar.action.SonarCacheAction>
     <hudson.tasks.MailMessageIdAction plugin="mailer@1.20">
-      <messageId>&lt;12590581.1.1492169936824.JavaMail.javamailuser@localhost&gt;</messageId>
+      <messageId>&lt;14373810.23.1492169330474.JavaMail.javamailuser@localhost&gt;</messageId>
     </hudson.tasks.MailMessageIdAction>
   </actions>
-  <queueId>1</queueId>
-  <timestamp>1492169913314</timestamp>
-  <startTime>1492169913319</startTime>
-  <result>FAILURE</result>
-  <duration>18207</duration>
+  <queueId>12</queueId>
+  <timestamp>1492169316633</timestamp>
+  <startTime>1492169316637</startTime>
+  <result>SUCCESS</result>
+  <duration>9895</duration>
   <charset>windows-1251</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -91,5 +89,7 @@
   <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@3.2.0">
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
-  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+  <culprits class="com.google.common.collect.RegularImmutableSortedSet">
+    <string>ma31drom</string>
+  </culprits>
 </build>

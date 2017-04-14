@@ -1,4 +1,4 @@
-Запущен изменением в SCM
+Started by user [8mha:////4NaSJ0f42AkIUNVvrMkbgCQk5hTGAWgvj/chNzEc2DIbAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
 Building in workspace C:\Program Files (x86)\Jenkins\workspace\mentoring
  > git.exe rev-parse --is-inside-work-tree # timeout=10
 Fetching changes from the remote Git repository
@@ -9,16 +9,17 @@ Fetching upstream changes from file:///d:/mentoring-spring/mentoring-spring/
 Seen branch in repository origin/master
 Seen 1 remote branch
  > git.exe tag -l # timeout=10
-Checking out Revision 13d7c319bccf563ea35548f5ad40772df0bef1f6 (origin/master)
+Checking out Revision d8a75b8146da259139b36affd85ca2a5bb8751ba (origin/master)
  > git.exe config core.sparsecheckout # timeout=10
- > git.exe checkout -f 13d7c319bccf563ea35548f5ad40772df0bef1f6
- > git.exe rev-list 3b8c0f04d720ba37de332a8d2808ab0633dc3290 # timeout=10
+ > git.exe checkout -f d8a75b8146da259139b36affd85ca2a5bb8751ba
+ > git.exe rev-list d8a75b8146da259139b36affd85ca2a5bb8751ba # timeout=10
 No emails were triggered.
 [Gradle] - Launching build.
 [mentoring] $ cmd.exe /C "gradle.bat build && exit %%ERRORLEVEL%%"
-[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:compileJava
+Starting a Gradle Daemon (subsequent builds will be faster)
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:compileJava UP-TO-DATE
 [8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:processResources UP-TO-DATE
-[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:classes
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:classes UP-TO-DATE
 [8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:findMainClass
 [8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:war
 [8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:bootRepackage
@@ -26,33 +27,198 @@ No emails were triggered.
 [8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:compileTestJava UP-TO-DATE
 [8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:processTestResources NO-SOURCE
 [8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:testClasses UP-TO-DATE
-[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:test
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:test UP-TO-DATE
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:check UP-TO-DATE
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:build
 
-com.epam.mentoring.UserServiceTest.springTestContextPrepareTestInstance FAILED
-    java.lang.IllegalStateException
-        Caused by: java.lang.IllegalStateException
-            Caused by: java.lang.IllegalArgumentException
+[8mha:////4AsxnVFIPxB+ssQPocVj/UBjIWjLYHXfbdQrPIS/IFg0AAAAYx+LCAAAAAAAAP9b85aBtbiIQT2jNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUz5l5Yk5+em+uWXpBabBRd0uewzZWJgqChikILqSs7PK84HKneG0CCFDBDACFJYAAAMk/XNZQAAAA==[0mBUILD SUCCESSFUL
 
-7 tests completed, 1 failed, 6 skipped
-[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:test FAILED
-
-FAILURE: Build failed with an exception.
-
-* What went wrong:
-Execution failed for task ':test'.
-> There were failing tests. See the report at: file:///C:/Program%20Files%20(x86)/Jenkins/workspace/mentoring/build/reports/tests/test/index.html
-
-* Try:
-Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
-
-[8mha:////4AsxnVFIPxB+ssQPocVj/UBjIWjLYHXfbdQrPIS/IFg0AAAAYx+LCAAAAAAAAP9b85aBtbiIQT2jNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUz5l5Yk5+em+uWXpBabBRd0uewzZWJgqChikILqSs7PK84HKneG0CCFDBDACFJYAAAMk/XNZQAAAA==[0mBUILD FAILED
-
-Total time: 4.01 secs
-Build step 'Invoke Gradle script' changed build result to FAILURE
-Build step 'Invoke Gradle script' marked build as failure
-Skipped archiving because build is not successful
+Total time: 7.521 secs
+Build step 'Invoke Gradle script' changed build result to SUCCESS
+[mentoring] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.sonar.SonarRunnerInstallation\SonarQube_Scanner_2.8\bin\sonar-scanner.bat" scan -e -Dsonar.host.url=http://localhost:9000 "-Dsonar.projectName=Test java project with Sonar" -Dsonar.projectVersion=1.0 -Dsonar.sourceEncoding=UTF-8 -Dsonar.projectKey=mentoring-project -Dsonar.sources=src "-Dsonar.projectBaseDir=C:\Program Files (x86)\Jenkins\workspace\mentoring"
+C:\Program Files (x86)\Jenkins\tools\hudson.plugins.sonar.SonarRunnerInstallation\SonarQube_Scanner_2.8\bin\..
+INFO: Option -e/--errors is no longer supported and will be ignored
+INFO: Scanner configuration file: C:\Program Files (x86)\Jenkins\tools\hudson.plugins.sonar.SonarRunnerInstallation\SonarQube_Scanner_2.8\bin\..\conf\sonar-scanner.properties
+INFO: Project root configuration file: NONE
+INFO: SonarQube Scanner 2.8
+INFO: Java 1.8.0_60 Oracle Corporation (64-bit)
+INFO: Windows 7 6.1 amd64
+INFO: User cache: C:\Windows\system32\config\systemprofile\.sonar\cache
+INFO: Load global settings
+INFO: Load global settings (done) | time=151ms
+INFO: User cache: C:\Windows\system32\config\systemprofile\.sonar\cache
+INFO: Load plugins index
+INFO: Load plugins index (done) | time=28ms
+INFO: SonarQube server 6.3.0
+INFO: Default locale: "ru_RU", source code encoding: "UTF-8"
+INFO: Process project properties
+INFO: Load project repositories
+INFO: Load project repositories (done) | time=167ms
+INFO: Load quality profiles
+INFO: Load quality profiles (done) | time=92ms
+INFO: Load active rules
+INFO: Load active rules (done) | time=738ms
+INFO: Load metrics repository
+INFO: Load metrics repository (done) | time=78ms
+INFO: Publish mode
+INFO: Project key: mentoring-project
+INFO: -------------  Scan Test java project with Sonar
+INFO: Excluded sources for coverage: 
+INFO:   *.*
+INFO: Load server rules
+INFO: Load server rules (done) | time=159ms
+INFO: Initializer GenericCoverageSensor
+INFO: Initializer GenericCoverageSensor (done) | time=0ms
+INFO: Base dir: C:\Program Files (x86)\Jenkins\workspace\mentoring
+INFO: Working dir: C:\Program Files (x86)\Jenkins\workspace\mentoring\.sonar
+INFO: Source paths: src
+INFO: Source encoding: UTF-8, default locale: ru_RU
+INFO: Index files
+INFO: 27 files indexed
+INFO: Quality profile for java: Sonar way
+INFO: Sensor JavaSquidSensor [java]
+INFO: Configured Java source version (sonar.java.source): none
+INFO: JavaClasspath initialization
+WARN: Bytecode of dependencies was not provided for analysis of source files, you might end up with less precise results. Bytecode can be provided using sonar.java.libraries property
+INFO: JavaClasspath initialization (done) | time=1ms
+INFO: JavaTestClasspath initialization
+INFO: JavaTestClasspath initialization (done) | time=0ms
+INFO: Java Main Files AST scan
+INFO: 25 source files to be analyzed
+INFO: Java Main Files AST scan (done) | time=1897ms
+INFO: 25/25 source files have been analyzed
+INFO: Java Test Files AST scan
+INFO: 0 source files to be analyzed
+INFO: Java Test Files AST scan (done) | time=1ms
+INFO: Sensor JavaSquidSensor [java] (done) | time=2464ms
+INFO: 0/0 source files have been analyzed
+INFO: Sensor NoSonar Sensor [php]
+INFO: Sensor NoSonar Sensor [php] (done) | time=0ms
+INFO: Sensor Coverage Report Import [csharp]
+INFO: Sensor Coverage Report Import [csharp] (done) | time=0ms
+INFO: Sensor Coverage Report Import [csharp]
+INFO: Sensor Coverage Report Import [csharp] (done) | time=1ms
+INFO: Sensor Unit Test Results Import [csharp]
+INFO: Sensor Unit Test Results Import [csharp] (done) | time=0ms
+INFO: Sensor SurefireSensor [java]
+INFO: parsing C:\Program Files (x86)\Jenkins\workspace\mentoring\target\surefire-reports
+INFO: Sensor SurefireSensor [java] (done) | time=1ms
+INFO: Sensor JaCoCoSensor [java]
+INFO: Sensor JaCoCoSensor [java] (done) | time=0ms
+INFO: Sensor XmlFileSensor [java]
+INFO: Sensor XmlFileSensor [java] (done) | time=1ms
+INFO: Sensor Analyzer for "php.ini" files [php]
+INFO: Sensor Analyzer for "php.ini" files [php] (done) | time=2ms
+INFO: Sensor Zero Coverage Sensor
+INFO: Sensor Zero Coverage Sensor (done) | time=43ms
+INFO: Sensor Code Colorizer Sensor
+INFO: Sensor Code Colorizer Sensor (done) | time=2ms
+INFO: Sensor CPD Block Indexer
+INFO: org.sonar.scanner.cpd.deprecated.JavaCpdBlockIndexer@45e49d3d is used for java
+INFO: Sensor CPD Block Indexer (done) | time=54ms
+INFO: Calculating CPD for 16 files
+INFO: CPD calculation finished
+INFO: Analysis report generated in 124ms, dir size=127 KB
+INFO: Analysis reports compressed in 60ms, zip size=70 KB
+INFO: Analysis report uploaded in 73ms
+INFO: ANALYSIS SUCCESSFUL, you can browse http://localhost:9000/dashboard/index/mentoring-project
+INFO: Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+INFO: More about the report processing at http://localhost:9000/api/ce/task?id=AVtsQjNZu7iC9PvPIzSo
+INFO: Task total time: 5.913 s
+INFO: ------------------------------------------------------------------------
+INFO: EXECUTION SUCCESS
+INFO: ------------------------------------------------------------------------
+INFO: Total time: 7.707s
+INFO: Final Memory: 47M/386M
+INFO: ------------------------------------------------------------------------
+Archiving artifacts
+Deploying C:\Program Files (x86)\Jenkins\workspace\mentoring\build\libs\mentoring.war to container Tomcat 7.x Remote
+ERROR: Build step failed with exception
+[8mha:////4Hkp1lniP1dAAEzM5/9U2C7OgV2QtYfQjyG6jmGtvwzsAAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0morg.codehaus.cargo.container.ContainerException: Failed to redeploy [C:\Program Files (x86)\Jenkins\workspace\mentoring\build\libs\mentoring.war]
+	at org.codehaus.cargo.container.tomcat.internal.AbstractTomcatManagerDeployer.redeploy(AbstractTomcatManagerDeployer.java:193)
+	at hudson.plugins.deploy.CargoContainerAdapter.deploy(CargoContainerAdapter.java:73)
+	at hudson.plugins.deploy.CargoContainerAdapter$1.invoke(CargoContainerAdapter.java:116)
+	at hudson.plugins.deploy.CargoContainerAdapter$1.invoke(CargoContainerAdapter.java:103)
+	at hudson.FilePath.act(FilePath.java:997)
+	at hudson.FilePath.act(FilePath.java:975)
+	at hudson.plugins.deploy.CargoContainerAdapter.redeploy(CargoContainerAdapter.java:103)
+	at hudson.plugins.deploy.DeployPublisher.perform(DeployPublisher.java:61)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:779)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:720)
+	at hudson.model.Build$BuildExecution.post2(Build.java:186)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:665)
+	at hudson.model.Run.execute(Run.java:1760)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:405)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.invoke(TomcatManager.java:534)
+	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.list(TomcatManager.java:686)
+	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.getStatus(TomcatManager.java:699)
+	at org.codehaus.cargo.container.tomcat.internal.AbstractTomcatManagerDeployer.redeploy(AbstractTomcatManagerDeployer.java:174)
+	... 16 more
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.invoke(TomcatManager.java:534)
+	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.list(TomcatManager.java:686)
+	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.getStatus(TomcatManager.java:699)
+	at org.codehaus.cargo.container.tomcat.internal.AbstractTomcatManagerDeployer.redeploy(AbstractTomcatManagerDeployer.java:174)
+	at hudson.plugins.deploy.CargoContainerAdapter.deploy(CargoContainerAdapter.java:73)
+	at hudson.plugins.deploy.CargoContainerAdapter$1.invoke(CargoContainerAdapter.java:116)
+	at hudson.plugins.deploy.CargoContainerAdapter$1.invoke(CargoContainerAdapter.java:103)
+	at hudson.FilePath.act(FilePath.java:997)
+	at hudson.FilePath.act(FilePath.java:975)
+	at hudson.plugins.deploy.CargoContainerAdapter.redeploy(CargoContainerAdapter.java:103)
+	at hudson.plugins.deploy.DeployPublisher.perform(DeployPublisher.java:61)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:779)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:720)
+	at hudson.model.Build$BuildExecution.post2(Build.java:186)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:665)
+	at hudson.model.Run.execute(Run.java:1760)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:405)
+Build step 'Deploy war/ear to a container' marked build as failure
 Email was triggered for: Always
 Sending email for trigger: Always
-Not sending mail to unregistered user ma31drom@gmail.com
 Sending email to: ma31drom@gmail.com
 Finished: FAILURE

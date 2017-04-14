@@ -26,12 +26,11 @@
               </branches>
             </marked>
             <revision reference="../marked"/>
-            <hudsonBuildNumber>62</hudsonBuildNumber>
+            <hudsonBuildNumber>61</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
       <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
-      <scmName></scmName>
       <remoteUrls>
         <string>file://d:/mentoring-spring/mentoring-spring/</string>
       </remoteUrls>
@@ -48,7 +47,7 @@
     <hudson.scm.SCMRevisionState_-None/>
     <hudson.plugins.sonar.action.SonarAnalysisAction plugin="sonar@2.6.1">
       <installationName>local</installationName>
-      <ceTaskId>AVtsQjNZu7iC9PvPIzSo</ceTaskId>
+      <ceTaskId>AVtsO8z45e95cyAXGjQ5</ceTaskId>
       <url>http://localhost:9000/dashboard/index/mentoring-project</url>
       <isNew>true</isNew>
       <isSkipped>false</isSkipped>
@@ -56,33 +55,33 @@
     <hudson.plugins.sonar.action.SonarCacheAction plugin="sonar@2.6.1">
       <infoByTaskId>
         <entry>
-          <string>AVtsQjNZu7iC9PvPIzSo</string>
+          <string>AVtsO8z45e95cyAXGjQ5</string>
           <hudson.plugins.sonar.client.ProjectInformation>
-            <created>1492169931823</created>
+            <created>1492169513135</created>
             <key>mentoring-project</key>
             <name>Test java project with Sonar</name>
             <url>http://localhost:9000/dashboard/index/mentoring-project</url>
             <status>ERROR</status>
-            <ceStatus>in_progress</ceStatus>
-            <ceUrl>http://localhost:9000/api/ce/task?id=AVtsQjNZu7iC9PvPIzSo</ceUrl>
+            <ceStatus>success</ceStatus>
+            <ceUrl>http://localhost:9000/api/ce/task?id=AVtsO8z45e95cyAXGjQ5</ceUrl>
           </hudson.plugins.sonar.client.ProjectInformation>
         </entry>
       </infoByTaskId>
       <infoByUrl/>
-      <lastRequest>1492169932047</lastRequest>
+      <lastRequest>1492169513146</lastRequest>
       <lastProjInfo>
         <hudson.plugins.sonar.client.ProjectInformation reference="../../infoByTaskId/entry/hudson.plugins.sonar.client.ProjectInformation"/>
       </lastProjInfo>
     </hudson.plugins.sonar.action.SonarCacheAction>
     <hudson.tasks.MailMessageIdAction plugin="mailer@1.20">
-      <messageId>&lt;12590581.1.1492169936824.JavaMail.javamailuser@localhost&gt;</messageId>
+      <messageId>&lt;21297253.27.1492169516761.JavaMail.javamailuser@localhost&gt;</messageId>
     </hudson.tasks.MailMessageIdAction>
   </actions>
-  <queueId>1</queueId>
-  <timestamp>1492169913314</timestamp>
-  <startTime>1492169913319</startTime>
-  <result>FAILURE</result>
-  <duration>18207</duration>
+  <queueId>14</queueId>
+  <timestamp>1492169502689</timestamp>
+  <startTime>1492169502694</startTime>
+  <result>SUCCESS</result>
+  <duration>10438</duration>
   <charset>windows-1251</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>

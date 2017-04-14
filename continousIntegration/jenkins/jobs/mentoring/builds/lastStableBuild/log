@@ -1,4 +1,4 @@
-Запущен изменением в SCM
+Started by user [8mha:////4NaSJ0f42AkIUNVvrMkbgCQk5hTGAWgvj/chNzEc2DIbAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
 Building in workspace C:\Program Files (x86)\Jenkins\workspace\mentoring
  > git.exe rev-parse --is-inside-work-tree # timeout=10
 Fetching changes from the remote Git repository
@@ -9,16 +9,16 @@ Fetching upstream changes from file:///d:/mentoring-spring/mentoring-spring/
 Seen branch in repository origin/master
 Seen 1 remote branch
  > git.exe tag -l # timeout=10
-Checking out Revision 3868851c0a336e8573f6710371b03685e869da58 (origin/master)
+Checking out Revision d8a75b8146da259139b36affd85ca2a5bb8751ba (origin/master)
  > git.exe config core.sparsecheckout # timeout=10
- > git.exe checkout -f 3868851c0a336e8573f6710371b03685e869da58
- > git.exe rev-list 989d23d0ae87422950f7c6c08105ac2f3ab8b227 # timeout=10
+ > git.exe checkout -f d8a75b8146da259139b36affd85ca2a5bb8751ba
+ > git.exe rev-list d8a75b8146da259139b36affd85ca2a5bb8751ba # timeout=10
 No emails were triggered.
 [Gradle] - Launching build.
 [mentoring] $ cmd.exe /C "gradle.bat build && exit %%ERRORLEVEL%%"
-[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:compileJava
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:compileJava UP-TO-DATE
 [8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:processResources UP-TO-DATE
-[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:classes
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:classes UP-TO-DATE
 [8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:findMainClass
 [8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:war
 [8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:bootRepackage
@@ -26,13 +26,13 @@ No emails were triggered.
 [8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:compileTestJava UP-TO-DATE
 [8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:processTestResources NO-SOURCE
 [8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:testClasses UP-TO-DATE
-[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:test
-[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:check
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:test UP-TO-DATE
+[8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:check UP-TO-DATE
 [8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:build
 
 [8mha:////4AsxnVFIPxB+ssQPocVj/UBjIWjLYHXfbdQrPIS/IFg0AAAAYx+LCAAAAAAAAP9b85aBtbiIQT2jNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUz5l5Yk5+em+uWXpBabBRd0uewzZWJgqChikILqSs7PK84HKneG0CCFDBDACFJYAAAMk/XNZQAAAA==[0mBUILD SUCCESSFUL
 
-Total time: 16.158 secs
+Total time: 2.243 secs
 Build step 'Invoke Gradle script' changed build result to SUCCESS
 [mentoring] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.sonar.SonarRunnerInstallation\SonarQube_Scanner_2.8\bin\sonar-scanner.bat" scan -e -Dsonar.host.url=http://localhost:9000 "-Dsonar.projectName=Test java project with Sonar" -Dsonar.projectVersion=1.0 -Dsonar.sourceEncoding=UTF-8 -Dsonar.projectKey=mentoring-project -Dsonar.sources=src "-Dsonar.projectBaseDir=C:\Program Files (x86)\Jenkins\workspace\mentoring"
 C:\Program Files (x86)\Jenkins\tools\hudson.plugins.sonar.SonarRunnerInstallation\SonarQube_Scanner_2.8\bin\..
@@ -44,26 +44,28 @@ INFO: Java 1.8.0_60 Oracle Corporation (64-bit)
 INFO: Windows 7 6.1 amd64
 INFO: User cache: C:\Windows\system32\config\systemprofile\.sonar\cache
 INFO: Load global settings
-INFO: Load global settings (done) | time=46ms
+INFO: Load global settings (done) | time=55ms
 INFO: User cache: C:\Windows\system32\config\systemprofile\.sonar\cache
 INFO: Load plugins index
-INFO: Load plugins index (done) | time=8ms
+INFO: Load plugins index (done) | time=6ms
 INFO: SonarQube server 6.3.0
 INFO: Default locale: "ru_RU", source code encoding: "UTF-8"
 INFO: Process project properties
 INFO: Load project repositories
-INFO: Load project repositories (done) | time=46ms
+INFO: Load project repositories (done) | time=52ms
 INFO: Load quality profiles
-INFO: Load quality profiles (done) | time=24ms
+INFO: Load quality profiles (done) | time=20ms
 INFO: Load active rules
-INFO: Load active rules (done) | time=349ms
+INFO: Load active rules (done) | time=313ms
 INFO: Load metrics repository
-INFO: Load metrics repository (done) | time=37ms
+INFO: Load metrics repository (done) | time=54ms
 INFO: Publish mode
 INFO: Project key: mentoring-project
 INFO: -------------  Scan Test java project with Sonar
+INFO: Excluded sources for coverage: 
+INFO:   **/*.*
 INFO: Load server rules
-INFO: Load server rules (done) | time=111ms
+INFO: Load server rules (done) | time=102ms
 INFO: Initializer GenericCoverageSensor
 INFO: Initializer GenericCoverageSensor (done) | time=0ms
 INFO: Base dir: C:\Program Files (x86)\Jenkins\workspace\mentoring
@@ -77,20 +79,20 @@ INFO: Sensor JavaSquidSensor [java]
 INFO: Configured Java source version (sonar.java.source): none
 INFO: JavaClasspath initialization
 WARN: Bytecode of dependencies was not provided for analysis of source files, you might end up with less precise results. Bytecode can be provided using sonar.java.libraries property
-INFO: JavaClasspath initialization (done) | time=0ms
+INFO: JavaClasspath initialization (done) | time=1ms
 INFO: JavaTestClasspath initialization
 INFO: JavaTestClasspath initialization (done) | time=0ms
 INFO: Java Main Files AST scan
 INFO: 25 source files to be analyzed
-INFO: Java Main Files AST scan (done) | time=1851ms
+INFO: Java Main Files AST scan (done) | time=1896ms
 INFO: 25/25 source files have been analyzed
 INFO: Java Test Files AST scan
 INFO: 0 source files to be analyzed
 INFO: Java Test Files AST scan (done) | time=0ms
-INFO: Sensor JavaSquidSensor [java] (done) | time=2510ms
+INFO: Sensor JavaSquidSensor [java] (done) | time=2507ms
 INFO: 0/0 source files have been analyzed
 INFO: Sensor NoSonar Sensor [php]
-INFO: Sensor NoSonar Sensor [php] (done) | time=1ms
+INFO: Sensor NoSonar Sensor [php] (done) | time=0ms
 INFO: Sensor Coverage Report Import [csharp]
 INFO: Sensor Coverage Report Import [csharp] (done) | time=0ms
 INFO: Sensor Coverage Report Import [csharp]
@@ -105,31 +107,28 @@ INFO: Sensor JaCoCoSensor [java] (done) | time=0ms
 INFO: Sensor XmlFileSensor [java]
 INFO: Sensor XmlFileSensor [java] (done) | time=0ms
 INFO: Sensor Analyzer for "php.ini" files [php]
-INFO: Sensor Analyzer for "php.ini" files [php] (done) | time=3ms
+INFO: Sensor Analyzer for "php.ini" files [php] (done) | time=2ms
 INFO: Sensor Zero Coverage Sensor
-INFO: Sensor Zero Coverage Sensor (done) | time=28ms
+INFO: Sensor Zero Coverage Sensor (done) | time=0ms
 INFO: Sensor Code Colorizer Sensor
 INFO: Sensor Code Colorizer Sensor (done) | time=1ms
 INFO: Sensor CPD Block Indexer
-INFO: org.sonar.scanner.cpd.deprecated.JavaCpdBlockIndexer@568e2d65 is used for java
-INFO: Sensor CPD Block Indexer (done) | time=56ms
-INFO: SCM provider for this project is: git
-INFO: 1 files to be analyzed
-INFO: 1/1 files analyzed
+INFO: org.sonar.scanner.cpd.deprecated.JavaCpdBlockIndexer@4f466207 is used for java
+INFO: Sensor CPD Block Indexer (done) | time=54ms
 INFO: Calculating CPD for 16 files
 INFO: CPD calculation finished
-INFO: Analysis report generated in 152ms, dir size=127 KB
-INFO: Analysis reports compressed in 78ms, zip size=70 KB
-INFO: Analysis report uploaded in 19ms
+INFO: Analysis report generated in 135ms, dir size=122 KB
+INFO: Analysis reports compressed in 61ms, zip size=67 KB
+INFO: Analysis report uploaded in 24ms
 INFO: ANALYSIS SUCCESSFUL, you can browse http://localhost:9000/dashboard/index/mentoring-project
 INFO: Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
-INFO: More about the report processing at http://localhost:9000/api/ce/task?id=AVtozw2E5e95cyAXGjQ1
-INFO: Task total time: 5.134 s
+INFO: More about the report processing at http://localhost:9000/api/ce/task?id=AVtsRXGDu7iC9PvPIzSr
+INFO: Task total time: 4.672 s
 INFO: ------------------------------------------------------------------------
 INFO: EXECUTION SUCCESS
 INFO: ------------------------------------------------------------------------
-INFO: Total time: 6.056s
-INFO: Final Memory: 50M/412M
+INFO: Total time: 5.555s
+INFO: Final Memory: 52M/430M
 INFO: ------------------------------------------------------------------------
 Archiving artifacts
 Deploying C:\Program Files (x86)\Jenkins\workspace\mentoring\build\libs\mentoring.war to container Tomcat 7.x Remote
@@ -138,7 +137,5 @@ Deploying C:\Program Files (x86)\Jenkins\workspace\mentoring\build\libs\mentorin
   Deploying [C:\Program Files (x86)\Jenkins\workspace\mentoring\build\libs\mentoring.war]
 Email was triggered for: Always
 Sending email for trigger: Always
-Not sending mail to unregistered user ma31drom@gmail.com
 Sending email to: ma31drom@gmail.com
-Connection error sending email, retrying once more in 10 seconds...
 Finished: SUCCESS

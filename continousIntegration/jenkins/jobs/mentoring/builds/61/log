@@ -16,7 +16,6 @@ Checking out Revision d8a75b8146da259139b36affd85ca2a5bb8751ba (origin/master)
 No emails were triggered.
 [Gradle] - Launching build.
 [mentoring] $ cmd.exe /C "gradle.bat build && exit %%ERRORLEVEL%%"
-Starting a Gradle Daemon (subsequent builds will be faster)
 [8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:compileJava UP-TO-DATE
 [8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:processResources UP-TO-DATE
 [8mha:////4DDxGAXBIIPJwzOoJ97nZhCt95qpDEGwAprc3IS+9jCGAAAAYB+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUyFJBZn++WXpCqzh62PfDo/h4mBoaKIQQqqJTk/rzgfqNYZQoMUMkAAI0hhAQASWqbMYgAAAA==[0m:classes UP-TO-DATE
@@ -33,7 +32,7 @@ Starting a Gradle Daemon (subsequent builds will be faster)
 
 [8mha:////4AsxnVFIPxB+ssQPocVj/UBjIWjLYHXfbdQrPIS/IFg0AAAAYx+LCAAAAAAAAP9b85aBtbiIQT2jNKU4P0+vIKc0PTOvWC+9KDElJ1XPHUz5l5Yk5+em+uWXpBabBRd0uewzZWJgqChikILqSs7PK84HKneG0CCFDBDACFJYAAAMk/XNZQAAAA==[0mBUILD SUCCESSFUL
 
-Total time: 7.521 secs
+Total time: 2.23 secs
 Build step 'Invoke Gradle script' changed build result to SUCCESS
 [mentoring] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.sonar.SonarRunnerInstallation\SonarQube_Scanner_2.8\bin\sonar-scanner.bat" scan -e -Dsonar.host.url=http://localhost:9000 "-Dsonar.projectName=Test java project with Sonar" -Dsonar.projectVersion=1.0 -Dsonar.sourceEncoding=UTF-8 -Dsonar.projectKey=mentoring-project -Dsonar.sources=src "-Dsonar.projectBaseDir=C:\Program Files (x86)\Jenkins\workspace\mentoring"
 C:\Program Files (x86)\Jenkins\tools\hudson.plugins.sonar.SonarRunnerInstallation\SonarQube_Scanner_2.8\bin\..
@@ -45,28 +44,28 @@ INFO: Java 1.8.0_60 Oracle Corporation (64-bit)
 INFO: Windows 7 6.1 amd64
 INFO: User cache: C:\Windows\system32\config\systemprofile\.sonar\cache
 INFO: Load global settings
-INFO: Load global settings (done) | time=151ms
+INFO: Load global settings (done) | time=45ms
 INFO: User cache: C:\Windows\system32\config\systemprofile\.sonar\cache
 INFO: Load plugins index
-INFO: Load plugins index (done) | time=28ms
+INFO: Load plugins index (done) | time=8ms
 INFO: SonarQube server 6.3.0
 INFO: Default locale: "ru_RU", source code encoding: "UTF-8"
 INFO: Process project properties
 INFO: Load project repositories
-INFO: Load project repositories (done) | time=167ms
+INFO: Load project repositories (done) | time=54ms
 INFO: Load quality profiles
-INFO: Load quality profiles (done) | time=92ms
+INFO: Load quality profiles (done) | time=26ms
 INFO: Load active rules
-INFO: Load active rules (done) | time=738ms
+INFO: Load active rules (done) | time=239ms
 INFO: Load metrics repository
-INFO: Load metrics repository (done) | time=78ms
+INFO: Load metrics repository (done) | time=55ms
 INFO: Publish mode
 INFO: Project key: mentoring-project
 INFO: -------------  Scan Test java project with Sonar
 INFO: Excluded sources for coverage: 
-INFO:   *.*
+INFO:   src/*
 INFO: Load server rules
-INFO: Load server rules (done) | time=159ms
+INFO: Load server rules (done) | time=87ms
 INFO: Initializer GenericCoverageSensor
 INFO: Initializer GenericCoverageSensor (done) | time=0ms
 INFO: Base dir: C:\Program Files (x86)\Jenkins\workspace\mentoring
@@ -85,140 +84,58 @@ INFO: JavaTestClasspath initialization
 INFO: JavaTestClasspath initialization (done) | time=0ms
 INFO: Java Main Files AST scan
 INFO: 25 source files to be analyzed
-INFO: Java Main Files AST scan (done) | time=1897ms
+INFO: Java Main Files AST scan (done) | time=1508ms
 INFO: 25/25 source files have been analyzed
 INFO: Java Test Files AST scan
 INFO: 0 source files to be analyzed
-INFO: Java Test Files AST scan (done) | time=1ms
-INFO: Sensor JavaSquidSensor [java] (done) | time=2464ms
-INFO: 0/0 source files have been analyzed
+INFO: Java Test Files AST scan (done) | time=0ms
+INFO: Sensor JavaSquidSensor [java] (done) | time=1939ms
 INFO: Sensor NoSonar Sensor [php]
 INFO: Sensor NoSonar Sensor [php] (done) | time=0ms
 INFO: Sensor Coverage Report Import [csharp]
+INFO: 0/0 source files have been analyzed
 INFO: Sensor Coverage Report Import [csharp] (done) | time=0ms
 INFO: Sensor Coverage Report Import [csharp]
-INFO: Sensor Coverage Report Import [csharp] (done) | time=1ms
+INFO: Sensor Coverage Report Import [csharp] (done) | time=0ms
 INFO: Sensor Unit Test Results Import [csharp]
-INFO: Sensor Unit Test Results Import [csharp] (done) | time=0ms
+INFO: Sensor Unit Test Results Import [csharp] (done) | time=1ms
 INFO: Sensor SurefireSensor [java]
 INFO: parsing C:\Program Files (x86)\Jenkins\workspace\mentoring\target\surefire-reports
-INFO: Sensor SurefireSensor [java] (done) | time=1ms
+INFO: Sensor SurefireSensor [java] (done) | time=0ms
 INFO: Sensor JaCoCoSensor [java]
-INFO: Sensor JaCoCoSensor [java] (done) | time=0ms
+INFO: Sensor JaCoCoSensor [java] (done) | time=1ms
 INFO: Sensor XmlFileSensor [java]
-INFO: Sensor XmlFileSensor [java] (done) | time=1ms
+INFO: Sensor XmlFileSensor [java] (done) | time=0ms
 INFO: Sensor Analyzer for "php.ini" files [php]
-INFO: Sensor Analyzer for "php.ini" files [php] (done) | time=2ms
+INFO: Sensor Analyzer for "php.ini" files [php] (done) | time=3ms
 INFO: Sensor Zero Coverage Sensor
-INFO: Sensor Zero Coverage Sensor (done) | time=43ms
+INFO: Sensor Zero Coverage Sensor (done) | time=33ms
 INFO: Sensor Code Colorizer Sensor
-INFO: Sensor Code Colorizer Sensor (done) | time=2ms
+INFO: Sensor Code Colorizer Sensor (done) | time=1ms
 INFO: Sensor CPD Block Indexer
-INFO: org.sonar.scanner.cpd.deprecated.JavaCpdBlockIndexer@45e49d3d is used for java
-INFO: Sensor CPD Block Indexer (done) | time=54ms
+INFO: org.sonar.scanner.cpd.deprecated.JavaCpdBlockIndexer@23d0f6be is used for java
+INFO: Sensor CPD Block Indexer (done) | time=48ms
 INFO: Calculating CPD for 16 files
 INFO: CPD calculation finished
-INFO: Analysis report generated in 124ms, dir size=127 KB
-INFO: Analysis reports compressed in 60ms, zip size=70 KB
-INFO: Analysis report uploaded in 73ms
+INFO: Analysis report generated in 131ms, dir size=127 KB
+INFO: Analysis reports compressed in 76ms, zip size=70 KB
+INFO: Analysis report uploaded in 25ms
 INFO: ANALYSIS SUCCESSFUL, you can browse http://localhost:9000/dashboard/index/mentoring-project
 INFO: Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
-INFO: More about the report processing at http://localhost:9000/api/ce/task?id=AVtsQjNZu7iC9PvPIzSo
-INFO: Task total time: 5.913 s
+INFO: More about the report processing at http://localhost:9000/api/ce/task?id=AVtsO8z45e95cyAXGjQ5
+INFO: Task total time: 3.942 s
 INFO: ------------------------------------------------------------------------
 INFO: EXECUTION SUCCESS
 INFO: ------------------------------------------------------------------------
-INFO: Total time: 7.707s
-INFO: Final Memory: 47M/386M
+INFO: Total time: 4.808s
+INFO: Final Memory: 48M/404M
 INFO: ------------------------------------------------------------------------
 Archiving artifacts
 Deploying C:\Program Files (x86)\Jenkins\workspace\mentoring\build\libs\mentoring.war to container Tomcat 7.x Remote
-ERROR: Build step failed with exception
-[8mha:////4Hkp1lniP1dAAEzM5/9U2C7OgV2QtYfQjyG6jmGtvwzsAAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0morg.codehaus.cargo.container.ContainerException: Failed to redeploy [C:\Program Files (x86)\Jenkins\workspace\mentoring\build\libs\mentoring.war]
-	at org.codehaus.cargo.container.tomcat.internal.AbstractTomcatManagerDeployer.redeploy(AbstractTomcatManagerDeployer.java:193)
-	at hudson.plugins.deploy.CargoContainerAdapter.deploy(CargoContainerAdapter.java:73)
-	at hudson.plugins.deploy.CargoContainerAdapter$1.invoke(CargoContainerAdapter.java:116)
-	at hudson.plugins.deploy.CargoContainerAdapter$1.invoke(CargoContainerAdapter.java:103)
-	at hudson.FilePath.act(FilePath.java:997)
-	at hudson.FilePath.act(FilePath.java:975)
-	at hudson.plugins.deploy.CargoContainerAdapter.redeploy(CargoContainerAdapter.java:103)
-	at hudson.plugins.deploy.DeployPublisher.perform(DeployPublisher.java:61)
-	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
-	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:779)
-	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:720)
-	at hudson.model.Build$BuildExecution.post2(Build.java:186)
-	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:665)
-	at hudson.model.Run.execute(Run.java:1760)
-	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
-	at hudson.model.ResourceController.execute(ResourceController.java:97)
-	at hudson.model.Executor.run(Executor.java:405)
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at sun.net.NetworkClient.doConnect(Unknown Source)
-	at sun.net.www.http.HttpClient.openServer(Unknown Source)
-	at sun.net.www.http.HttpClient.openServer(Unknown Source)
-	at sun.net.www.http.HttpClient.<init>(Unknown Source)
-	at sun.net.www.http.HttpClient.New(Unknown Source)
-	at sun.net.www.http.HttpClient.New(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
-	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.invoke(TomcatManager.java:534)
-	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.list(TomcatManager.java:686)
-	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.getStatus(TomcatManager.java:699)
-	at org.codehaus.cargo.container.tomcat.internal.AbstractTomcatManagerDeployer.redeploy(AbstractTomcatManagerDeployer.java:174)
-	... 16 more
-java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at sun.net.NetworkClient.doConnect(Unknown Source)
-	at sun.net.www.http.HttpClient.openServer(Unknown Source)
-	at sun.net.www.http.HttpClient.openServer(Unknown Source)
-	at sun.net.www.http.HttpClient.<init>(Unknown Source)
-	at sun.net.www.http.HttpClient.New(Unknown Source)
-	at sun.net.www.http.HttpClient.New(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
-	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.invoke(TomcatManager.java:534)
-	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.list(TomcatManager.java:686)
-	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.getStatus(TomcatManager.java:699)
-	at org.codehaus.cargo.container.tomcat.internal.AbstractTomcatManagerDeployer.redeploy(AbstractTomcatManagerDeployer.java:174)
-	at hudson.plugins.deploy.CargoContainerAdapter.deploy(CargoContainerAdapter.java:73)
-	at hudson.plugins.deploy.CargoContainerAdapter$1.invoke(CargoContainerAdapter.java:116)
-	at hudson.plugins.deploy.CargoContainerAdapter$1.invoke(CargoContainerAdapter.java:103)
-	at hudson.FilePath.act(FilePath.java:997)
-	at hudson.FilePath.act(FilePath.java:975)
-	at hudson.plugins.deploy.CargoContainerAdapter.redeploy(CargoContainerAdapter.java:103)
-	at hudson.plugins.deploy.DeployPublisher.perform(DeployPublisher.java:61)
-	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
-	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:779)
-	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:720)
-	at hudson.model.Build$BuildExecution.post2(Build.java:186)
-	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:665)
-	at hudson.model.Run.execute(Run.java:1760)
-	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
-	at hudson.model.ResourceController.execute(ResourceController.java:97)
-	at hudson.model.Executor.run(Executor.java:405)
-Build step 'Deploy war/ear to a container' marked build as failure
+  Redeploying [C:\Program Files (x86)\Jenkins\workspace\mentoring\build\libs\mentoring.war]
+  Undeploying [C:\Program Files (x86)\Jenkins\workspace\mentoring\build\libs\mentoring.war]
+  Deploying [C:\Program Files (x86)\Jenkins\workspace\mentoring\build\libs\mentoring.war]
 Email was triggered for: Always
 Sending email for trigger: Always
 Sending email to: ma31drom@gmail.com
-Finished: FAILURE
+Finished: SUCCESS
