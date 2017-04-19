@@ -69,7 +69,7 @@ public abstract class AbstractCrudDao<T extends IdAwareModel> implements CrudOpe
 	private Map<String, String> getPropertiesAsMap(T obj) {
 		BeanPropertySqlParameterSource beanPropertySqlParameterSource = new BeanPropertySqlParameterSource(obj);
 		String[] readablePropertyNames = beanPropertySqlParameterSource.getReadablePropertyNames();
-		Map<String, String> params = Arrays.stream(readablePropertyNames).filter(t -> !"class".equalsIgnoreCase(t))
+		return Arrays.stream(readablePropertyNames).filter(t -> !"class".equalsIgnoreCase(t))
 				.collect(Collectors.toMap(this::underscoredUppercase, name -> {
 					Object value = beanPropertySqlParameterSource.getValue(name);
 					String valueOf = String.valueOf(value);
@@ -81,8 +81,13 @@ public abstract class AbstractCrudDao<T extends IdAwareModel> implements CrudOpe
 					}
 					return valueOf;
 				}));
-		return params;
 	};
+
+	@Override
+	public void afterPropertiesSet() throws Exception {
+		Assert.notNull(template, "JdbcTemplate must not be null");
+		Assert.notNull(txm, "This DAO needs tx manager for work");
+	}
 
 	protected abstract Class<T> getModelClass();
 
@@ -94,11 +99,5 @@ public abstract class AbstractCrudDao<T extends IdAwareModel> implements CrudOpe
 
 	private String underscoredUppercase(String string) {
 		return CaseFormat.LOWER_CAMEL.to(CaseFormat.UPPER_UNDERSCORE, string);
-	}
-
-	@Override
-	public void afterPropertiesSet() throws Exception {
-		Assert.notNull(template, "JdbcTemplate must not be null");
-		Assert.notNull(txm, "This DAO needs tx manager for work");
 	}
 }
