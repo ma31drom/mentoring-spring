@@ -1,0 +1,10 @@
+jar {
+    baseName = 'dao'
+    version =  '1.0'
+}
+
+dependencies {
+	compile 'org.springframework:spring-jdbc:4.3.7.RELEASE'
+	compile 'org.springframework:spring-context:4.3.7.RELEASE'  
+    compile 'com.google.guava:guava:20.0'
+}
